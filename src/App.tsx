@@ -21,6 +21,12 @@ export default function App() {
     'Evaluation, visualization, and experiment management',
   ];
 
+  const users = [
+    'ML researchers building custom generative models',
+    'Research engineers scaling experiments across compute',
+    'Teams building production imaging pipelines',
+  ];
+
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100">
       <header className="sticky top-0 z-20 border-b border-white/10 bg-neutral-950/80 backdrop-blur">
@@ -127,6 +133,54 @@ export default function App() {
                 <p className="mt-4 leading-7 text-neutral-300">{pillar.text}</p>
               </div>
             ))}
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-7xl px-6 py-8">
+          <div className="grid gap-6 md:grid-cols-[1fr_1fr]">
+            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8">
+              <p className="text-sm uppercase tracking-[0.25em] text-neutral-400">Who it is for</p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight">Built for people who want velocity without chaos.</h2>
+              <div className="mt-6 space-y-4">
+                {users.map((item, index) => (
+                  <div key={item} className="flex items-start gap-4 rounded-2xl border border-white/10 bg-black/20 p-4">
+                    <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/15 bg-white/5 text-sm font-semibold text-white">
+                      {index + 1}
+                    </div>
+                    <div className="pt-1 text-neutral-200">{item}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div id="quickstart" className="rounded-[2rem] border border-white/10 bg-white/5 p-8">
+              <p className="text-sm uppercase tracking-[0.25em] text-neutral-400">Quickstart</p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight">Get started in seconds.</h2>
+
+              <div className="mt-6 grid gap-6">
+                <div className="rounded-2xl border border-white/10 bg-black/30 p-5 font-mono text-sm leading-7 text-neutral-200">
+                  <div className="mb-3 text-xs uppercase tracking-[0.2em] text-neutral-500">Install (recommended)</div>
+                  pip install openmedaxis
+                  <br />
+                  oma train --recipe autoencoder --dataset IXI --modality T2
+                </div>
+
+                <div className="rounded-2xl border border-white/10 bg-black/30 p-5 font-mono text-sm leading-7 text-neutral-200">
+                  <div className="mb-3 text-xs uppercase tracking-[0.2em] text-neutral-500">From source</div>
+                  git clone https://github.com/AllAxisAI/OpenMedAxis.git
+                  <br />
+                  cd OpenMedAxis
+                  <br />
+                  pip install -e .
+                  <br />
+                  oma train --config recipes/autoencoder.yaml
+                </div>
+              </div>
+
+              <p className="mt-6 text-sm leading-6 text-neutral-400">
+                Minimal setup, modular recipes, and flexible pipelines. The goal is simple: let you focus on experiments, not infrastructure.
+              </p>
+            </div>
           </div>
         </section>
 
