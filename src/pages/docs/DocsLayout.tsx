@@ -17,6 +17,7 @@ const NAV: NavSection[] = [
       { label: 'Method System', path: '/docs/concepts/method-system' },
       { label: 'Loss System', path: '/docs/concepts/loss-system' },
       { label: 'Data Pipeline', path: '/docs/concepts/data-pipeline' },
+      { label: 'Diffusion System', path: '/docs/concepts/diffusion-system' },
     ],
   },
   {

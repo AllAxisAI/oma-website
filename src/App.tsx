@@ -9,6 +9,8 @@ import DataPipeline from './pages/docs/concepts/DataPipeline';
 import CustomMethod from './pages/docs/guides/CustomMethod';
 import CustomLoss from './pages/docs/guides/CustomLoss';
 import DiffusionBridgeRecipe from './pages/docs/recipes/DiffusionBridgeRecipe';
+import DiffusionSystem from './pages/docs/concepts/DiffusionSystem';
+
 
 function useHashRoute(): string {
   const getPath = () => {
@@ -33,6 +35,7 @@ const DOCS_PAGES: Record<string, React.ComponentType> = {
   '/docs/guides/custom-method': CustomMethod,
   '/docs/guides/custom-loss': CustomLoss,
   '/docs/recipes/diffusion-bridge': DiffusionBridgeRecipe,
+  '/docs/concepts/diffusion-system': DiffusionSystem,
 };
 
 export default function App() {
