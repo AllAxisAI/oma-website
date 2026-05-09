@@ -1,4 +1,5 @@
-import { useState, useEffect, ReactNode } from 'react';
+import { useState, useEffect } from 'react';
+import type { ReactNode } from 'react';
 
 interface NavItem { label: string; path: string }
 interface NavSection { title: string; items: NavItem[] }
