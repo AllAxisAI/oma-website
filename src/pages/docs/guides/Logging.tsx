@@ -546,7 +546,7 @@ trainer = L.Trainer(
 
       <div className="flex gap-4 pt-4 border-t border-white/10">
         <a href="#/docs/guides/custom-loss" className="text-sm text-neutral-400 hover:text-white transition">← Custom Loss Term</a>
-        <a href="#/docs/recipes/diffusion-bridge" className="text-sm text-blue-400 hover:text-blue-300 transition ml-auto">Next: Diffusion Bridge Recipe →</a>
+        <a href="#/docs/guides/evaluation" className="text-sm text-blue-400 hover:text-blue-300 transition ml-auto">Next: Evaluation & Metrics →</a>
       </div>
     </div>
   );
