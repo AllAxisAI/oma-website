@@ -8,6 +8,7 @@ import LossSystem from './pages/docs/concepts/LossSystem';
 import DataPipeline from './pages/docs/concepts/DataPipeline';
 import CustomMethod from './pages/docs/guides/CustomMethod';
 import CustomLoss from './pages/docs/guides/CustomLoss';
+import Logging from './pages/docs/guides/Logging';
 import DiffusionBridgeRecipe from './pages/docs/recipes/DiffusionBridgeRecipe';
 import DiffusionSystem from './pages/docs/concepts/DiffusionSystem';
 
@@ -34,6 +35,7 @@ const DOCS_PAGES: Record<string, React.ComponentType> = {
   '/docs/concepts/data-pipeline': DataPipeline,
   '/docs/guides/custom-method': CustomMethod,
   '/docs/guides/custom-loss': CustomLoss,
+  '/docs/guides/logging': Logging,
   '/docs/recipes/diffusion-bridge': DiffusionBridgeRecipe,
   '/docs/concepts/diffusion-system': DiffusionSystem,
 };

@@ -26,6 +26,7 @@ const NAV: NavSection[] = [
     items: [
       { label: 'Writing a Custom Method', path: '/docs/guides/custom-method' },
       { label: 'Writing a Custom Loss', path: '/docs/guides/custom-loss' },
+      { label: 'Logging & Debugging', path: '/docs/guides/logging' },
     ],
   },
   {
