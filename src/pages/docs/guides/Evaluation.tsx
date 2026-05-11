@@ -206,7 +206,7 @@ method = MyMethod(
         <p className="text-sm text-neutral-500">
           The key format is <code className="font-mono">{'{stage}'}/{'{name}'}/{'{metric}'}</code> where
           <code className="font-mono"> name</code> is the dict key you used in{' '}
-          <code className="font-mono">EvaluatorManager({'{"metrics": ReconstructionEvaluator(...)}'})}</code>.
+          <code className="font-mono">EvaluatorManager({'{"metrics": ReconstructionEvaluator(...)}'})</code>.
         </p>
       </section>
 
